@@ -5,6 +5,9 @@ const App = () => {
     let users = [ "Kripu", "Äsim", "John", "Nikita", "Ryan"]
 
 console.log(users.slice(1,4));
+//we can also do 
+console.log(users.slice(1))
+//this will slice off only the 1st value which is the 0 index based value
 
     return (
         <div>
