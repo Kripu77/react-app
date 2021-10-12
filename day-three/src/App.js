@@ -9,6 +9,7 @@ const App = () => {
 console.log(users.slice(1,3))
 console.log(users.slice(1))
 console.log(users.slice(3))
+//after this we will discuss about call, apply and bind method
 
 //this will slice off only the 1st value which is the 0 index based value
 
