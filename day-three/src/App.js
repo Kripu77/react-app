@@ -6,6 +6,7 @@ const App = () => {
 
 //splice and slice method are often tend to be confusing array methods
 //lets use the aboved array to demonstrtate the method
+console.log(users.slice(1,3))
 
 //this will slice off only the 1st value which is the 0 index based value
 
