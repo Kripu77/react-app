@@ -1,0 +1,1 @@
+// splice and slice in JavaScript Array method
