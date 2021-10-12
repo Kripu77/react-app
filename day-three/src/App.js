@@ -5,6 +5,7 @@ const App = () => {
     let users = [ "Kripu", "Äsim", "John", "Nikita", "Ryan"]
 
 //splice and slice method are often tend to be confusing array methods
+//lets use the aboved array to demonstrtate the method
 
 //this will slice off only the 1st value which is the 0 index based value
 
