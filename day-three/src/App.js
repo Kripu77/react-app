@@ -1,22 +1,30 @@
 import React from 'react'
-
+import LazyLoad from 'react-lazy-load';
 const App = () => {
-    //slice method returns a new array it bascially removes the selected value in the slice method and only returns the unsxelected value.
-    let users = [ "Kripu", "Äsim", "John", "Nikita", "Ryan"]
-
-//splice and slice method are often tend to be confusing array methods
-//lets use the aboved array to demonstrtate the method
-console.log(users.slice(1,3))
-console.log(users.slice(1))
-console.log(users.slice(3))
-//after this we will discuss about call, apply and bind method
-
-//this will slice off only the 1st value which is the 0 index based value
-
     return (
         <div>
-            <h1> This is a test</h1>
-            {}
+            <h1> lazy loading example</h1>
+            Scroll to load images.
+    <div className="filler" />
+    <LazyLoad height={762} offsetVertical={300}>
+      <img src='http://apod.nasa.gov/apod/image/1502/HDR_MVMQ20Feb2015ouellet1024.jpg' />
+    </LazyLoad>
+    <div className="filler" />
+    <LazyLoad height={683} offsetTop={9000}>
+      <img src='http://apod.nasa.gov/apod/image/1502/2015_02_20_conj_bourque1024.jpg' />
+    </LazyLoad>
+    <div className="filler" />
+    <LazyLoad height={480} offsetLeft={150}>
+      <img src='http://apod.nasa.gov/apod/image/1502/MarsPlume_jaeschke_480.gif' />
+    </LazyLoad>
+    <div className="filler" />
+    <LazyLoad
+      height={720}
+      onContentVisible={() => console.log('look ma I have been lazyloaded!')}
+    >
+      <img src='http://apod.nasa.gov/apod/image/1502/ToadSky_Lane_1080_annotated.jpg' />
+    </LazyLoad>
+    <div className="filler" />
         </div>
     )
 }
