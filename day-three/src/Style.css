@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--light);
+    color: var(--dark);
     font-family: "Signika Negative", sans-serif;
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ body {
     text-align: center;
     background-color: var(--green);
     font-weight: 600;
-    color: var(--light);
+    color: var(--dark);
     font-size: 2rem;
 }
 
@@ -37,9 +37,30 @@ body {
 }
 
 .example-container {
-    background: white;
+ 
     border-radius: 30px;
-    width: 150px;
-    height: 150px;
+    width: 20vw;
+    height: 50vh;
+    padding: 50px;
 
+}
+
+.demo-img{
+    height: 30vh;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+ 
+    align-content: center;
+       justify-content: baseline;
+
+}
+
+.first-child{
+flex: 1;
+}
+.second-child{
+    margin-left: 35vw;
 }
