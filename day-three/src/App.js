@@ -1,5 +1,6 @@
 import React from 'react'
 import LazyLoad from 'react-lazy-load';
+import Gsap from './Gsap';
 const App = () => {
     return (
         <div>
@@ -25,6 +26,7 @@ const App = () => {
       <img src='http://apod.nasa.gov/apod/image/1502/ToadSky_Lane_1080_annotated.jpg' />
     </LazyLoad>
     <div className="filler" />
+        <Gsap/>
         </div>
     )
 }
