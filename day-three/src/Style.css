@@ -35,3 +35,11 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
+
+.example-container {
+    background: white;
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+
+}

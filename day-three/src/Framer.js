@@ -3,12 +3,14 @@ import {motion } from 'framer-motion'
 const Framer = () => {
     return (
         <div>
-             <div className="example-container">
-         <motion.div
-    animate={{ scale: 2 }}
-    transition={{ duration: 0.5 }}
+            //once we import motion it takes object
+         <motion.div className='example-container'
+    animate={{ x: 900,
+    opacity:1 }}
+    transition={{ duration: 3 }}
+    
   />  
-      </div>
+    
      
         </div>
     )
