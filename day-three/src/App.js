@@ -3,7 +3,7 @@ import LazyLoad from 'react-lazy-load';
 const App = () => {
     return (
         <div>
-            <h1> lazy loading example</h1>
+            <h1> lazy loading Sample</h1>
             Scroll to load images.
     <div className="filler" />
     <LazyLoad height={762} offsetVertical={300}>
