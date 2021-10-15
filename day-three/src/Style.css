@@ -49,18 +49,23 @@ body {
     height: 30vh;
 }
 
+.motion-filler{
+
+  
+display: flex;
+justify-content: space-around;
+  
+
+
+
+}
 .parent{
     display: flex;
-    flex-direction: row;
- 
-    align-content: center;
-       justify-content: baseline;
-
+    justify-content: space-around ;
 }
-
 .first-child{
-flex: 1;
+  flex: 0 0 200px
 }
 .second-child{
-    margin-left: 35vw;
+padding: 0 0 0 34rem ;
 }
