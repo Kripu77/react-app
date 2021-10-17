@@ -29,7 +29,9 @@ const App = () => {
     </LazyLoad>
     <div className="filler" />
       <Gsap/> 
+         <div className="filler" />
       <Framer/>
+         <div className="filler" />
       <LazyLoading/>
         </div>
     )

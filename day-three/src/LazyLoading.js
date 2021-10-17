@@ -6,15 +6,15 @@ const LazyLoading = () => {
     return (
         <div className='filler'>
 
-            <LazyLoad  height={762} offsetVertical={300}>
-<motion.div
+            <LazyLoad  height={100} offsetVertical={100}>
+<motion.div className='motion-filler'
  animate={{ x: 20,
     opacity:1.3 }}
     initial={{
-        opacity: 0
+        opacity: -1
     }}
     transition={{ type:"spring" ,
-    stifness: 10, duration: 5 }}
+    stifness: 0, duration: 3 }}
 >
 <div className='parent'>
     <div className='first-child'> 
