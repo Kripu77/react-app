@@ -2,6 +2,7 @@ import React from 'react'
 import LazyLoad from 'react-lazy-load';
 import Framer from './Framer';
 import Gsap from './Gsap';
+import LazyLoading from './LazyLoading';
 const App = () => {
     return (
         <div>
@@ -29,6 +30,7 @@ const App = () => {
     <div className="filler" />
       <Gsap/> 
       <Framer/>
+      <LazyLoading/>
         </div>
     )
 }
