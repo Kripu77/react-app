@@ -59,7 +59,14 @@ const Framer = () => {
     
     </motion.div>
 
+
+
+
     </LazyLoad>
+
+
+
+    
      </div>
         </div>
         
