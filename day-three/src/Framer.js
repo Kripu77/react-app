@@ -15,7 +15,7 @@ const Framer = () => {
         opacity: 0
     }}
     transition={{ type:"spring" ,
-    stifness: 10, duration: 5 }}
+    stifness: 10, duration: 2 }}
     
     
 > <div className='parent'>
