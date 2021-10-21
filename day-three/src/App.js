@@ -3,6 +3,8 @@ import LazyLoad from 'react-lazy-load';
 import Framer from './Framer';
 import Gsap from './Gsap';
 import LazyLoading from './LazyLoading';
+import Modalc from './Modalc';
+
 const App = () => {
     return (
         <div>
@@ -32,6 +34,7 @@ const App = () => {
          <div className="filler" />
       <Framer/>
          <div className="filler" />
+       <Modalc/>
       <LazyLoading/>
         </div>
     )
