@@ -5,7 +5,7 @@ const Modalc = () => {
     const[isModalOpen, setIsModalOpen] = useState(false)
     return (
         <div>
-           <Modal isOpen={isModalOpen}>
+           <Modal isOpen={isModalOpen} onRequestClose={()=>{setIsModalOpen(false)}}>
                <h1>Modal Title</h1>
                <p> Modal Bodyd</p>
                <button onClick={()=>setIsModalOpen(false)}>Close</button>
