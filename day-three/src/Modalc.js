@@ -8,9 +8,11 @@ const Modalc = () => {
            <Modal isOpen={isModalOpen}>
                <h1>Modal Title</h1>
                <p> Modal Bodyd</p>
+               <button onClick={()=>setIsModalOpen(false)}>Close</button>
            </Modal>
 
            <h1> I have a modal component would you like to see?</h1>
+           <button onClick={()=>{setIsModalOpen(true)}}> Open</button>
         </div>
     )
 }
