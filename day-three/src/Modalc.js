@@ -8,15 +8,20 @@ const Modalc = () => {
     return (
         <div>
             <Modal isOpen={isModalOpen} onRequestClose={()=>setIsModalOpen(false)}
-            style={
+           style={
              {
-                     
+                     overlay:{
+overflow: 'hidden'
+
+                     },
                     content:{
                         color:'gray',
                         backgroundColor:'black',
                         margin: '20vh auto',
                         width: '20vw',
-                        height:'20vh'
+                        height:'20vh',
+                        overflow: 'hidden'
+                      
                     }
                 }
             } >

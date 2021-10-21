@@ -9,9 +9,9 @@ const LazyLoading = () => {
             <LazyLoad  height={100} offsetVertical={100}>
 <motion.div className='motion-filler'
  animate={{ x: 20,
-    opacity:1.3 }}
+    opacity:1 }}
     initial={{
-        opacity: -1
+        opacity: 0.2
     }}
     transition={{ type:"spring" ,
     stifness: 0, duration: 3 }}

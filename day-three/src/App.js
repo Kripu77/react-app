@@ -4,6 +4,7 @@ import Framer from './Framer';
 import Gsap from './Gsap';
 import LazyLoading from './LazyLoading';
 import Modalc from './Modalc';
+import Slider from './Slider';
 
 const App = () => {
     return (
@@ -35,6 +36,7 @@ const App = () => {
       <Framer/>
          <div className="filler" />
        <Modalc/>
+       <Slider/>
       <LazyLoading/>
         </div>
     )
