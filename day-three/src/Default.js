@@ -3,6 +3,8 @@ import LazyLoad from 'react-lazy-load'
 import {motion} from 'framer-motion';
 
 const Default = () => {
+
+
     return (
         <div>
             
