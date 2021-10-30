@@ -6,7 +6,7 @@ const LazyLoading = () => {
     return (
         <div className='filler'>
 
-            <LazyLoad  height={100} offsetVertical={100}>
+            <LazyLoad  height={1000} offsetVertical={100}>
 <motion.div className='motion-filler'
  animate={{ x: 20,
     opacity:1 }}
