@@ -13,5 +13,11 @@ return {...currentState, loading:action.payLoad}
     }
     if(action.type === "updatingState"){
         return {...currentState, updating:true}
+
+    
+    }
+
+    if(action.type === "update"){
+        return {...action.currentState, data:action.payLoad, updating:false}
     }
 }

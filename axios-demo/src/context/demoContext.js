@@ -45,7 +45,12 @@ const dataFn= (data)=>{
 }
 
 
+const updateDataFn = (data)=>{
+
+    dispatch({type:"update", payLoad:data})
+}
 //fetch data
+
 const getData = () => {
     axios.get(url)
     .then((resp)=>dataFn(resp.data))
@@ -56,9 +61,19 @@ React.useEffect(()=>{
 
 //update data
 
+const updateData = ()=>{
+
+    axios.put(url, {
+        body:"Updated",title:"Üpdated"
+    })
+    .then((resp)=>{  
+        updateDataFn(resp.data)
+  })
+}
+
     return (
         <div>
-           <contextProvider.Provider value={{...state, loadingFn, updateFn, errorFn, dataFn}}>
+           <contextProvider.Provider value={{...state, loadingFn, updateFn, errorFn, dataFn, updateData}}>
                {children}</contextProvider.Provider> 
         </div>
     )

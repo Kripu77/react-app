@@ -2,7 +2,7 @@ import React from 'react'
 import { useDemoContext } from '../context/demoContext'
 
 const Data = () => {
-    const {loading, error, data, updating, loadingFn, errorFn, dataFn} = useDemoContext();
+    const {loading, error, data, updating, loadingFn, errorFn, dataFn, updateData, updateFn} = useDemoContext();
     console.log(loadingFn, errorFn, dataFn)
 
     if(loading){
@@ -20,6 +20,9 @@ const Data = () => {
         
         <div>
             <h1> {data.body}, {data.title}</h1>
+            <button onClick={()=>{
+            updateData()
+            }}> Update</button>
         </div>
     )
 }
