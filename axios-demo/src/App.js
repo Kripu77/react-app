@@ -1,9 +1,10 @@
 import React from 'react'
+import Demo from './Pages/Demo'
 
 const App = () => {
     return (
         <div>
-          <h1> Test</h1>  
+        <Demo/>
         </div>
     )
 }
