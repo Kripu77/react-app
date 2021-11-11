@@ -27,6 +27,7 @@ const fetchFn  = ()=>{
     })
     .finally(()=>{
         setLoading(false)
+        setUpdating(false)
     })
 }
 
@@ -34,6 +35,32 @@ const fetchFn  = ()=>{
 useEffect(()=>{
     fetchFn()
 }, [])
+
+
+
+//to update using put request
+
+const updateFn = ()=>{
+    setUpdating(true);
+    client.patch('/1',{
+        body:"Updated",title: "Changed"
+    })
+    .then((res)=>{
+        setUpdating(true)
+        setData(res.data)})
+    .catch((err)=>{setError(true)
+        setUpdating(false)
+      
+    console.log(err)})
+    .finally(()=>setUpdating(false))
+}
+
+
+
+
+
+
+
 
 const {body, title} = data;
 
@@ -43,10 +70,14 @@ if(loading){
 if(error){
     return <h1> There is an error...Please review</h1>
 }
+if(updating){
+    return <h1> Updating...... hang in</h1>
+}
     return (
         <div>
             <h1> {body}</h1>
             <h2> {title}</h2>
+            <button onClick={()=>updateFn()}>Update</button>
         </div>
     )
 }
