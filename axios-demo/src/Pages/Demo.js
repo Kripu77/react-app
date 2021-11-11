@@ -6,7 +6,8 @@ const Demo = () => {
     console.log(data);
     return (
         <div>
-           <h1> Check</h1> 
+           <h1> {data.title}</h1>
+           <h2>{data.body}</h2> 
         </div>
     )
 }
