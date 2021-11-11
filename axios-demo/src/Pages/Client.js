@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import { useDemoContext } from '../context/demoContext';
 
 //setup instance for the baseURL
 
@@ -8,6 +9,8 @@ const client = axios.create({
 });
 
 const Client = () => {
+    console.log(useDemoContext());
+ 
     const[data, setData] = useState([])
     const[loading,setLoading] = useState(true)
     const [error, setError] = useState(false);
