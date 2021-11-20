@@ -1,13 +1,14 @@
 import React from 'react'
-
+import capture from "../images/Capture.PNG"
 const Masthead = () => {
     return (
       <section className="mx-auto sm:max-w-screen-xl sm:text-2xl text-justify p-4">
-        <article className='text-center'>
-          <h1 className='text-4xl text-green-600'> Tailwind CSS</h1>
+        <article className="text-center">
+          <h1 className="text-4xl text-green-600"> Tailwind CSS</h1>
           <h1 className="text-xl sm:text-3xl text-center">
             {" "}
-            This is a comprenshive tailwind css demo showing how it can be made responsive.
+            This is a comprenshive tailwind css demo showing how it can be made
+            responsive.
           </h1>
         </article>
         <article className="py-5">
@@ -60,6 +61,33 @@ const Masthead = () => {
             leaving our HTML. Personally, this has made me a big fan of
             tailwind.{" "}
           </h1>
+          <a
+            href="https://tailwindcss.com/docs/installation"
+            className="text-green-500"
+            target="blank"
+          >
+            Click here to visit the Link to installation guide.
+          </a>
+        </article>
+        <article className="py-5">
+          <img
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1616325976381/7A4luAFTl.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+            alt="info"
+            className="w-4/5 mx-auto py-6"
+          />
+          <h1> How to enable JIT mode in Tailwind CSS and purgeCSS?</h1>
+          <h1 className="sm:text-xl text-gray-600">
+            Once you have installed the Tailwind CSS on your project root.
+            Navigate to the tailwind.config.js file, where you can find
+            following options.
+          </h1>
+          <img
+            src={capture}
+            alt="captured image"
+            className="w-4/5 mx-auto py-6"
+          />
+          <h1 className='sm:text-xl text-gray-600'> Once you have navigated to the config file. Replace the purge conifg with:   </h1>
+          <img/>
         </article>
       </section>
     );
