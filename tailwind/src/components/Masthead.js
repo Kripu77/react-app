@@ -1,5 +1,7 @@
 import React from 'react'
 import capture from "../images/Capture.PNG"
+import capturet from "../images/Capture2.PNG"
+import capturethree from "../images/Capture3.PNG"
 const Masthead = () => {
     return (
       <section className="mx-auto sm:max-w-screen-xl sm:text-2xl text-justify p-4">
@@ -86,8 +88,25 @@ const Masthead = () => {
             alt="captured image"
             className="w-4/5 mx-auto py-6"
           />
-          <h1 className='sm:text-xl text-gray-600'> Once you have navigated to the config file. Replace the purge conifg with:   </h1>
-          <img/>
+          <h1 className="sm:text-xl text-gray-600">
+            {" "}
+            Once you have navigated to the config file. Replace the purge conifg
+            with:{" "}
+          </h1>
+          <img
+            src={capturet}
+            alt="capture two"
+            className="w-4/5 mx-auto py-6"
+          />
+          <h1 className="sm:text-xl text-gray-600">
+            {" "}
+            Once you have you have replaced the pruge configuration the Purge
+            CSS will minimize the unused CSS and do its work under the Hood.
+            Similarly to enable the JIT mode you simply have to add mode: 'jit'
+            to the tailwind.config.js file.{" "}
+          </h1>
+          <img src={capturethree} alt="threee" className="w-4/5 mx-auto py-6" />
+          <h1> Congratulations, you have successfully enabled the Purge CSS and JIT mode in Tailwind CSS. Now, you can write as much as CSS you would like without worrying about shipping max CSS file to the client.</h1>
         </article>
       </section>
     );
