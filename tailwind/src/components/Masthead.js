@@ -106,7 +106,7 @@ const Masthead = () => {
             to the tailwind.config.js file.{" "}
           </h1>
           <img src={capturethree} alt="threee" className="w-4/5 mx-auto py-6" />
-          <h1> Congratulations, you have successfully enabled the Purge CSS and JIT mode in Tailwind CSS. Now, you can write as much as CSS you would like without worrying about shipping max CSS file to the client.</h1>
+          <h1> Congratulations, you have successfully enabled the Purge CSS and JIT mode in Tailwind CSS. Now, you can write as much as CSS using Tailwind CSS you would like without worrying about shipping max CSS file to the client.</h1>
         </article>
       </section>
     );
