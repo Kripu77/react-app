@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <section>
-            <h1> Kripu Khadka</h1>
+        <section className='text-center'>
+            <h1> Welcome</h1>
         </section>
     )
 }
