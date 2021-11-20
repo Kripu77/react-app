@@ -8,7 +8,7 @@ const Nav = () => {
     const [open, setIsOpen] = React.useState(false);
 
     return (
-      <main className="bg-blue-500 text-white text-xl p-2 sm:text-3xl sm:p-4">
+      <main className="bg-blue-500 text-white text-xl p-2 sm:text-2xl sm:p-4">
         <Header />
         <nav className="flex justify-between">
           <section className="flex justify-between">
@@ -18,10 +18,10 @@ const Nav = () => {
             className={
               open
                 ? "fixed bg-blue-500 z-10 top-0 left-0 right-0 h-screen flex justify-around transition-all sm:static sm:h-0 "
-                : "hidden sm:flex"
+                : "fixed top-0 -ml-96  sm:flex sm:static"
             }
           >
-            <section className="flex flex-col mt-1 m:flex-row sm:space-x-7">
+            <section className="flex flex-col mt-1 m:flex-row sm:space-x-7 relative">
               <section className="sm:hidden">
                 <h1> Kripu Khadka</h1>
               </section>
@@ -32,7 +32,7 @@ const Nav = () => {
               </section>
             </section>
             <button
-              className="fixed  right-2 top-10 sm:hidden"
+              className={open?"fixed  right-2 top-10 sm:hidden": "hidden"}
               onClick={() => setIsOpen(false)}
             >
               {" "}
